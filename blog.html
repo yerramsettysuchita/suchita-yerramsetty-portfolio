@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Suchita Yerramsetty Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Web development blog by [Your Name] featuring articles, tutorials, and insights on front-end and back-end development.">
+    <meta name="keywords" content="web development blog, coding tutorials, frontend, backend, full-stack, [your technologies]">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Blog - Your Name Portfolio">
+    <meta property="og:description" content="Web development blog featuring articles, tutorials, and insights on front-end and back-end development.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://yourportfolio.com/blog.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">Suchita<span class="highlight">Yerramsetty</span></span></a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="page-title">Blog</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current-page">Blog</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog-page-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Articles & Insights</span>
+                <h2 class="section-title">Latest From The Blog</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Sharing my knowledge and experiences in web development, design, and technology.
+                </p>
+            </div>
+            
+            <div class="blog-sidebar-layout">
+                <div class="blog-main-content">
+                    <!-- Blog Post 1 -->
+                    <article id="post1" class="blog-post">
+                        <div class="post-image">
+                            <img src="assets/images/blog/blog-post-1.jpg" alt="Understanding React Hooks">
+                            <div class="post-date">
+                                <span class="date">15</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Development</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 5 min read</span>
+                            </div>
+                            
+                            <h2 class="post-title">Understanding React Hooks: A Comprehensive Guide</h2>
+                            
+                            <div class="post-excerpt">
+                                <p>
+                                    React Hooks revolutionized how we build components. This guide explores the most useful hooks and provides practical examples for real-world applications.
+                                </p>
+                                
+                                <h3>Introduction to React Hooks</h3>
+                                <p>
+                                    Introduced in React 16.8, Hooks allow function components to use state and other React features that were previously only available in class components. They simplify code reuse, organization, and testing.
+                                </p>
+                                
+                                <h3>The Basic Hooks</h3>
+                                <p>
+                                    React comes with several built-in Hooks. Let's explore the three most commonly used ones:
+                                </p>
+                                
+                                <h4>1. useState</h4>
+                                <p>
+                                    The useState Hook allows you to add state to function components. It returns a stateful value and a function to update it.
+                                </p>
+                                
+                                <pre><code class="language-javascript">
+const [count, setCount] = useState(0);
+
+// Usage
+&lt;button onClick={() => setCount(count + 1)}&gt;
+  Increment
+&lt;/button&gt;
+                                </code></pre>
+                                
+                                <h4>2. useEffect</h4>
+                                <p>
+                                    The useEffect Hook allows you to perform side effects in function components. It's similar to componentDidMount, componentDidUpdate, and componentWillUnmount combined.
+                                </p>
+                                
+                                <pre><code class="language-javascript">
+useEffect(() => {
+  // Code to run after component mounts or updates
+  document.title = `You clicked ${count} times`;
+  
+  return () => {
+    // Cleanup (similar to componentWillUnmount)
+    // Runs before the component unmounts
+  };
+}, [count]); // Only re-run if count changes
+                                </code></pre>
+                                
+                                <h4>3. useContext</h4>
+                                <p>
+                                    The useContext Hook accepts a context object and returns the current context value, which is useful for consuming context created by React.createContext().
+                                </p>
+                            </div>
+                            
+                            <div class="post-footer">
+                                <div class="post-tags">
+                                    <span class="tag">React</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">Hooks</span>
+                                </div>
+                                
+                                <a href="blog-post.html" class="btn btn-tertiary">Read Full Article</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 2 -->
+                    <article id="post2" class="blog-post">
+                        <div class="post-image">
+                            <img src="assets/images/blog/blog-post-2.jpg" alt="Optimizing Web Performance">
+                            <div class="post-date">
+                                <span class="date">22</span>
+                                <span class="month">Feb</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Performance</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 7 min read</span>
+                            </div>
+                            
+                            <h2 class="post-title">Optimizing Web Performance: Strategies That Actually Work</h2>
+                            
+                            <div class="post-excerpt">
+                                <p>
+                                    Web performance is crucial for user experience and SEO. Discover practical optimization techniques that delivered real results for my clients.
+                                </p>
+                                
+                                <h3>Why Performance Matters</h3>
+                                <p>
+                                    Studies show that 53% of mobile users abandon sites that take over 3 seconds to load. Every 100ms delay in website load time can decrease conversions by 7%. Performance isn't just a technical consideration; it's a critical business factor.
+                                </p>
+                                
+                                <h3>Key Performance Metrics</h3>
+                                <p>
+                                    Before optimizing, it's essential to understand what to measure:
+                                </p>
+                                
+                                <ul>
+                                    <li><strong>First Contentful Paint (FCP):</strong> When the first content appears.</li>
+                                    <li><strong>Largest Contentful Paint (LCP):</strong> When the largest content element appears.</li>
+                                    <li><strong>Time to Interactive (TTI):</strong> When the page becomes fully interactive.</li>
+                                    <li><strong>Cumulative Layout Shift (CLS):</strong> Measures visual stability.</li>
+                                    <li><strong>First Input Delay (FID):</strong> Time from user interaction to browser response.</li>
+                                </ul>
+                                
+                                <h3>Top Optimization Strategies</h3>
+                                <p>
+                                    Based on my experience with client projects, these are the most effective techniques for improving web performance:
+                                </p>
+                            </div>
+                            
+                            <div class="post-footer">
+                                <div class="post-tags">
+                                    <span class="tag">Performance</span>
+                                    <span class="tag">Web Development</span>
+                                    <span class="tag">Optimization</span>
+                                </div>
+                                
+                                <a href="blog-post.html" class="btn btn-tertiary">Read Full Article</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Blog Post 3 -->
+                    <article id="post3" class="blog-post">
+                        <div class="post-image">
+                            <img src="assets/images/blog/blog-post-3.jpg" alt="From Junior to Senior Developer">
+                            <div class="post-date">
+                                <span class="date">10</span>
+                                <span class="month">Jan</span>
+                            </div>
+                        </div>
+                        
+                        <div class="post-content">
+                            <div class="post-meta">
+                                <span class="post-category">Career</span>
+                                <span class="post-read-time"><i class="far fa-clock"></i> 6 min read</span>
+                            </div>
+                            
+                            <h2 class="post-title">From Junior to Senior Developer: Lessons Learned</h2>
+                            
+                            <div class="post-excerpt">
+                                <p>
+                                    The journey from junior to senior developer involves more than just coding skills. Here are key insights and advice based on my personal experience.
+                                </p>
+                                
+                                <h3>The Technical Evolution</h3>
+                                <p>
+                                    When I started as a junior developer, I focused intensely on mastering specific frameworks and languages. While technical proficiency is important, I soon realized that being a senior developer requires a broader understanding of systems and the ability to make architectural decisions.
+                                </p>
+                                
+                                <h3>Beyond Code: The Soft Skills</h3>
+                                <p>
+                                    Technical skills might get you hired, but soft skills get you promoted. As I progressed in my career, these non-technical abilities became increasingly important:
+                                </p>
+                                
+                                <ul>
+                                    <li><strong>Communication:</strong> Explaining complex concepts in simple terms.</li>
+                                    <li><strong>Mentorship:</strong> Helping junior developers grow.</li>
+                                    <li><strong>Project Management:</strong> Estimating time, managing scope, and delivering on schedule.</li>
+                                    <li><strong>Business Understanding:</strong> Aligning technical solutions with business goals.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="post-footer">
+                                <div class="post-tags">
+                                    <span class="tag">Career</span>
+                                    <span class="tag">Professional Growth</span>
+                                    <span class="tag">Skills</span>
+                                </div>
+                                
+                                <a href="blog-post.html" class="btn btn-tertiary">Read Full Article</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <span class="page-dots">...</span>
+                        <a href="#" class="page-link">8</a>
+                        <a href="#" class="page-link next">
+                            Next <i class="fas fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <aside class="blog-sidebar">
+                    <!-- Search Widget -->
+                    <div class="sidebar-widget search-widget">
+                        <form class="search-form">
+                            <input type="text" placeholder="Search articles...">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </form>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget categories-widget">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul class="categories-list">
+                            <li><a href="#">Development <span>(8)</span></a></li>
+                            <li><a href="#">Performance <span>(5)</span></a></li>
+                            <li><a href="#">Career <span>(4)</span></a></li>
+                            <li><a href="#">JavaScript <span>(12)</span></a></li>
+                            <li><a href="#">React <span>(7)</span></a></li>
+                            <li><a href="#">Node.js <span>(6)</span></a></li>
+                            <li><a href="#">UI/UX <span>(3)</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Recent Posts Widget -->
+                    <div class="sidebar-widget recent-posts-widget">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul class="recent-posts-list">
+                            <li class="recent-post">
+                                <div class="post-thumb">
+                                    <img src="assets/images/blog/blog-thumb-1.jpg" alt="React Hooks">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="#post1">Understanding React Hooks: A Comprehensive Guide</a></h4>
+                                    <span class="post-date">March 15, 2023</span>
+                                </div>
+                            </li>
+                            <li class="recent-post">
+                                <div class="post-thumb">
+                                    <img src="assets/images/blog/blog-thumb-2.jpg" alt="Web Performance">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="#post2">Optimizing Web Performance: Strategies That Actually Work</a></h4>
+                                    <span class="post-date">February 22, 2023</span>
+                                </div>
+                            </li>
+                            <li class="recent-post">
+                                <div class="post-thumb">
+                                    <img src="assets/images/blog/blog-thumb-3.jpg" alt="Developer Career">
+                                </div>
+                                <div class="post-info">
+                                    <h4><a href="#post3">From Junior to Senior Developer: Lessons Learned</a></h4>
+                                    <span class="post-date">January 10, 2023</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget tags-widget">
+                        <h3 class="widget-title">Popular Tags</h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag">JavaScript</a>
+                            <a href="#" class="tag">React</a>
+                            <a href="#" class="tag">CSS</a>
+                            <a href="#" class="tag">Performance</a>
+                            <a href="#" class="tag">Node.js</a>
+                            <a href="#" class="tag">API</a>
+                            <a href="#" class="tag">MongoDB</a>
+                            <a href="#" class="tag">TypeScript</a>
+                            <a href="#" class="tag">Accessibility</a>
+                            <a href="#" class="tag">Responsive</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget">
+                        <h3 class="widget-title">Newsletter</h3>
+                        <p>Subscribe to get notified about new articles and updates.</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Enter your email" required>
+                                <button type="submit" class="btn-subscribe">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><span class="logo-text">Suchita<span class="highlight">Yerramsetty</span></span></a>
+                    <p class="tagline">Creating digital experiences that make an impact</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3 class="column-title">Quick Links</h3>
+                        <ul class="link-list">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3 class="column-title">Resources</h3>
+                        <ul class="link-list">
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="blog.html">Blog Articles</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Project Archive</a></li>
+                            <li><a href="#">Tools I Use</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3 class="column-title">Legal</h3>
+                        <ul class="link-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Subscribe to my newsletter</h3>
+                    <p class="newsletter-description">Get development tips, tutorials, and updates on my latest projects.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2023</span> Your Name. All Rights Reserved.</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/username" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/username" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/username" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-info">
+                    <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>

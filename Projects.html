@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Suchita Yerramsetty Portfolio</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="View the complete portfolio of projects by [Your Name] - Web Developer specializing in front-end and back-end development.">
+    <meta name="keywords" content="web developer, portfolio, projects, frontend, backend, full-stack, [your technologies]">
+    <meta name="author" content="Your Name">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="Projects - Your Name Portfolio">
+    <meta property="og:description" content="View the complete portfolio of projects by [Your Name] - Web Developer">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://yourportfolio.com/projects.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><span class="logo-text">Suchita<span class="highlight">Yerramsetty</span></span></a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#home" class="nav-link">Home</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                    <li><a href="index.html#experience" class="nav-link">Experience</a></li>
+                    <li><a href="index.html#skills" class="nav-link">Skills</a></li>
+                    <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                    <li><a href="index.html#services" class="nav-link">Services</a></li>
+                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <div class="nav-controls">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1 class="page-title">My Projects</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Home</a>
+                    <span class="separator">/</span>
+                    <span class="current-page">Projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-page-section section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Portfolio</span>
+                <h2 class="section-title">All Projects</h2>
+                <div class="section-underline"></div>
+                <p class="section-description">
+                    Explore my complete portfolio of projects showcasing my skills in web development, UI/UX design, and problem-solving.
+                </p>
+            </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+            </div>
+            
+            <div class="projects-grid all-projects">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web frontend">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project1.jpg" alt="E-commerce Platform">
+                        <div class="project-overlay">
+                            <a href="#project-modal-1" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project1" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            A fully responsive e-commerce platform with product management, shopping cart, and payment processing.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://project1-demo.com" target="_blank" class="project-link live-demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#project-modal-1" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web ui frontend">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project2.jpg" alt="Dashboard UI">
+                        <div class="project-overlay">
+                            <a href="#project-modal-2" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project2" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Redux</span>
+                            <span class="project-tag">Chart.js</span>
+                        </div>
+                        
+                        <h3 class="project-title">Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Interactive analytics dashboard with real-time data visualization, filters, and export capabilities.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://project2-demo.com" target="_blank" class="project-link live-demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#project-modal-2" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="mobile">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project3.jpg" alt="Mobile App">
+                        <div class="project-overlay">
+                            <a href="#project-modal-3" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project3" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">React Native</span>
+                            <span class="project-tag">Firebase</span>
+                            <span class="project-tag">Redux</span>
+                        </div>
+                        
+                        <h3 class="project-title">Fitness Tracker App</h3>
+                        <p class="project-description">
+                            Mobile app for tracking workouts, setting goals, and monitoring progress with personalized insights.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://project3-demo.com" target="_blank" class="project-link live-demo">
+                                <i class="fas fa-external-link-alt"></i> App Store
+                            </a>
+                            <a href="#project-modal-3" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card" data-category="web ui frontend">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project4.jpg" alt="Task Management">
+                        <div class="project-overlay">
+                            <a href="#project-modal-4" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project4" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Vue.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">MongoDB</span>
+                        </div>
+                        
+                        <h3 class="project-title">Task Management System</h3>
+                        <p class="project-description">
+                            Collaborative task management platform with real-time updates, assignees, due dates, and progress tracking.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://project4-demo.com" target="_blank" class="project-link live-demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#project-modal-4" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web backend">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project5.jpg" alt="API Backend">
+                        <div class="project-overlay">
+                            <a href="#project-modal-5" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project5" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Express</span>
+                            <span class="project-tag">MongoDB</span>
+                            <span class="project-tag">JWT</span>
+                        </div>
+                        
+                        <h3 class="project-title">RESTful API Service</h3>
+                        <p class="project-description">
+                            Scalable backend API service with authentication, authorization, and comprehensive documentation.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://github.com/username/project5" target="_blank" class="project-link github">
+                                <i class="fab fa-github"></i> View on GitHub
+                            </a>
+                            <a href="#project-modal-5" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="web ui frontend">
+                    <div class="project-image">
+                        <img src="assets/images/project-thumbnails/project6.jpg" alt="Portfolio Template">
+                        <div class="project-overlay">
+                            <a href="#project-modal-6" class="overlay-btn view-details">View Details</a>
+                            <a href="https://github.com/username/project6" target="_blank" class="overlay-btn view-code">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML5</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        
+                        <h3 class="project-title">Portfolio Template</h3>
+                        <p class="project-description">
+                            A customizable portfolio template for developers and designers with multiple themes and layout options.
+                        </p>
+                        
+                        <div class="project-links">
+                            <a href="https://project6-demo.com" target="_blank" class="project-link live-demo">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                            <a href="#project-modal-6" class="project-link case-study">
+                                <i class="fas fa-file-alt"></i> Case Study
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Add more projects as needed -->
+            </div>
+        </div>
+        
+        <!-- Project Modals -->
+        <!-- Project Modal 1 -->
+        <div id="project-modal-1" class="project-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                
+                <div class="modal-header">
+                    <h2 class="modal-title">E-commerce Platform</h2>
+                    <div class="modal-meta">
+                        <span class="modal-date">Completed: June 2022</span>
+                        <span class="modal-role">Role: Lead Developer</span>
+                    </div>
+                </div>
+                
+                <div class="modal-body">
+                    <div class="project-slider">
+                        <div class="slider-item">
+                            <img src="assets/images/project-details/project1-detail1.jpg" alt="E-commerce Homepage">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/images/project-details/project1-detail2.jpg" alt="Product Page">
+                        </div>
+                        <div class="slider-item">
+                            <img src="assets/images/project-details/project1-detail3.jpg" alt="Checkout Process">
+                        </div>
+                    </div>
+                    
+                    <div class="project-overview">
+                        <h3>Project Overview</h3>
+                        <p>
+                            A fully-featured e-commerce platform built for a client in the fashion industry. The platform includes product management, inventory tracking, user authentication, shopping cart functionality, and secure payment processing.
+                        </p>
+                    </div>
+                    
+                    <div class="project-details-grid">
+                        <div class="details-col">
+                            <h3>Challenges</h3>
+                            <ul>
+                                <li>Implementing a scalable product catalog with complex filtering options</li>
+                                <li>Ensuring secure payment processing and user data protection</li>
+                                <li>Optimizing performance for product image loading</li>
+                                <li>Creating a responsive design that works across all devices</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="details-col">
+                            <h3>Solutions</h3>
+                            <ul>
+                                <li>Designed a flexible database schema with efficient indexing</li>
+                                <li>Integrated with Stripe API with proper encryption and security measures</li>
+                                <li>Implemented lazy loading and image optimization techniques</li>
+                                <li>Utilized CSS Grid and Flexbox with strategic breakpoints</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-stack-detailed">
+                        <h3>Technology Stack</h3>
+                        <div class="tech-categories">
+                            <div class="tech-category">
+                                <h4>Frontend</h4>
+                                <ul>
+                                    <li>React with Redux for state management</li>
+                                    <li>Styled Components for component-based styling</li>
+                                    <li>React Router for navigation</li>
+                                    <li>Formik & Yup for form handling and validation</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tech-category">
+                                <h4>Backend</h4>
+                                <ul>
+                                    <li>Node.js with Express for API endpoints</li>
+                                    <li>MongoDB for database</li>
+                                    <li>JWT for authentication</li>
+                                    <li>Stripe API for payment processing</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="tech-category">
+                                <h4>DevOps</h4>
+                                <ul>
+                                    <li>AWS S3 for image storage</li>
+                                    <li>Heroku for deployment</li>
+                                    <li>GitHub Actions for CI/CD</li>
+                                    <li>Jest and React Testing Library for testing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-results">
+                        <h3>Results & Impact</h3>
+                        <p>
+                            The platform launched successfully and has processed over 5,000 orders in its first three months. Key metrics include:
+                        </p>
+                        <ul>
+                            <li>98% increase in mobile conversions compared to the client's previous site</li>
+                            <li>45% reduction in cart abandonment rate</li>
+                            <li>75% increase in average order value</li>
+                            <li>Page load time improved by 60%</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="project-links-detailed">
+                        <a href="https://project1-demo.com" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-external-link-alt"></i> Visit Live Site
+                        </a>
+                        <a href="https://github.com/username/project1" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Additional Project Modals would be defined here -->
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta-section section bg-light">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Have a Project in Mind?</h2>
+                <p class="cta-description">Let's collaborate to bring your ideas to life with custom solutions tailored to your specific needs.</p>
+                <a href="index.html#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html"><span class="logo-text">Your<span class="highlight">Name</span></span></a>
+                    <p class="tagline">Creating digital experiences that make an impact</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-column">
+                        <h3 class="column-title">Quick Links</h3>
+                        <ul class="link-list">
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#skills">Skills</a></li>
+                            <li><a href="projects.html">Projects</a></li>
+                            <li><a href="index.html#services">Services</a></li>
+                            <li><a href="index.html#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3 class="column-title">Resources</h3>
+                        <ul class="link-list">
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="blog.html">Blog Articles</a></li>
+                            <li><a href="#">Case Studies</a></li>
+                            <li><a href="#">Project Archive</a></li>
+                            <li><a href="#">Tools I Use</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-column">
+                        <h3 class="column-title">Legal</h3>
+                        <ul class="link-list">
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3 class="newsletter-title">Subscribe to my newsletter</h3>
+                    <p class="newsletter-description">Get development tips, tutorials, and updates on my latest projects.</p>
+                    
+                    <form class="newsletter-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn-subscribe">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2023</span> Your Name. All Rights Reserved.</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://github.com/username" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/username" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://twitter.com/username" target="_blank" class="social-link" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:your.email@example.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                
+                <div class="footer-info">
+                    <p>Built with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/project-filter.js"></script>
+    <script src="js/dark-mode.js"></script>
+</body>
+</html>
