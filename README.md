@@ -1,4 +1,4 @@
-# 💼 Suchita Yerramsetty – Professional Portfolio Website
+# 💼 Professional Portfolio Website
 
 ## 🌟 Overview  
 - A dynamic and responsive **personal portfolio website** showcasing professional experiences, projects, skills, and achievements. 
